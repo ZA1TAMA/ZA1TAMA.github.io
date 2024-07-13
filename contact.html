@@ -8,22 +8,27 @@
 <link href="assets/zaitama.png" type="image/x-icon" rel="icon">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="navbar">
             <nav>
-                <ul>
-                    <li><a href="index.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <img class="menu" src="assets/menu-button.svg" alt="menu" onclick="togglemenu()">
+                <a class="navlinks" href="index.html">Gallery</a>
+                <a class="navlinks" href="contact.html">Contact</a>
             </nav>
-            <img class="logo" src="assets/zaitama.png" alt="zaitama" onclick="darkmode()">
+            <img class="logo" src="assets/zaitama.svg" alt="zaitama" onclick="darkmode()">     
+        </div>
+        <div id="mobilenav">
+            <a class="navlinks" href="index.html">Gallery</a>
+            <a class="navlinks" href="contact.html">Contact</a>
         </div>
             <div class="hero" id="hero-contact">
         </div>     
     </header>
     <div class="contact-form">
-        <h1>Contact me</h1>
-        <p>zachariahgenest72@gmail.com</p>
+        <div class="gallery-title">
+        <h1>Contact Me</h1>
+        <p>zachariachgenest72@gmail.com</p>    
+        </div>
         <form>
             <input placeholder="Name*" required>
             <input type="email" placeholder="E-mail*" required>

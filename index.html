@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Great Sage</title>
+<title>Gallery</title>
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link href="assets/zaitama.png" type="image/x-icon" rel="icon">
 </head>
@@ -12,15 +12,19 @@
     <header class="header">
         <div class="navbar">
             <nav>
-                <ul>
-                    <li><a href="index.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <img class="menu" src="assets/menu-button.svg" alt="menu" onclick="togglemenu()">
+                <a class="navlinks" href="index.html">Gallery</a>
+                <a class="navlinks" href="contact.html">Contact</a>
             </nav>
-            <img class="logo" src="assets/zaitama.png" alt="zaitama" onclick="darkmode()">
+            <img class="logo" src="assets/zaitama.svg" alt="zaitama" onclick="darkmode()">     
+        </div>
+        <div id="mobilenav">
+            <a class="navlinks" href="index.html">Gallery</a>
+            <a class="navlinks" href="contact.html">Contact</a>
         </div>
             <div class="hero" id="hero-gallery">
-        </div>     
+                <h1>Zachariah Genest</h1>
+            </div>     
     </header>
     <div class="art">
         <div class="gallery-title">
