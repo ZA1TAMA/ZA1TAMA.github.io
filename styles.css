@@ -1,12 +1,13 @@
 html {
 	height: 100%;
- font-family: "Times New Roman", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 }
 
 :root {
 	--dark: #14181b;
 	--light: #eef0e9;
 }
+
 body {
 	background-color: var(--light);
 	color: var(--dark);
@@ -22,93 +23,103 @@ body {
 	color: var(--light);
 }
 
+header {
+	overflow: hidden;
+}
 .navbar {
- width: 100%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	background-color: black;
- padding: 10px 0;
+	padding: 10px 0;
 }
 
 nav {
- flex: 1;
- display: inline-block;
- margin-left: 6%;
+	flex: 1;
+	display: inline-block;
+	margin-left: 6%;
 }
-.navlinks{
+
+.navlinks {
 	text-decoration: none;
 	font-size: 30px;
 	color: white;
- margin-right: 10px;
+	margin-right: 10px;
 }
 
 .navlinks:hover {
 	transition: 0.3s ease;
- color: rgb(230, 183, 144);
+	color: rgb(230, 183, 144);
 }
 
 .navlinks:not(:hover) {
 	transition: 0.3s ease;
 }
+
 .menu {
- display: none;
+	display: none;
 }
+
 #mobilenav {
- display: none;
+	display: none;
 }
 
 @media only screen and (max-width: 873px) {
- nav a {
-  display: none;
- }
- .menu {
-  display: block;
-  width: 35px;
-  cursor: pointer;
- }
- #mobilenav{
- background: black;
- transition: .3s ease;
- padding-left: 6%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- overflow: hidden;
- }
- 
- #mobilenav a {
- margin: 0 0; 
- margin-bottom: 10px;
-}
-nav img {
-	display: none;
-}
-.themeToggleMobile {
-	width: 25px;
-	cursor: pointer;
-	
-}
+	nav a {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+		width: 35px;
+		cursor: pointer;
+	}
+
+	#mobilenav {
+		background: black;
+		transition: .3s ease;
+		padding-left: 6%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	#mobilenav a {
+		margin: 0 0;
+		margin-bottom: 10px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	.themeToggleMobile {
+		width: 25px;
+		cursor: pointer;
+
+	}
 }
 
 .logo {
 	width: 35px;
 	cursor: pointer;
 	margin-right: 6%;
- 
+
 }
 
 .logo:hover {
- background-color: rgb(230, 183, 144);
- transform: rotate(45deg);
- transition: 0.3s ease;
+	background-color: rgb(230, 183, 144);
+	transform: rotate(45deg);
+	transition: 0.3s ease;
 }
 
 .logo:not(:hover) {
- transition: 0.3s ease;
+	transition: 0.3s ease;
 }
 
-.logo:active{
- background-color: rgb(41, 45, 48);
+.logo:active {
+	background-color: rgb(41, 45, 48);
 }
 
 .themeToggle {
@@ -122,14 +133,14 @@ nav img {
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
- color: white;
+	color: white;
 	display: flex;
- align-items: center;
- justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .hero h1 {
- margin-top: -31.25%;
+	margin-top: -31.25%;
 	font-size: 50px;
 }
 
@@ -151,24 +162,9 @@ nav img {
 	padding-top: 56.25%;
 }
 
-#hero-mewtwo-stone {
-	background-image: url(assets/mewtwo/mewtwo-hero-stone.jpg);
-	padding-top: 56.25%;
-}
-
 #hero-mewtwo {
 	background-image: url(assets/mewtwo/mewtwo-hero.jpg);
 	padding-top: 56.25%;
-	transform: translateY(-100%);
-}
-
-#hero-mewtwo:hover {
-	opacity: 0;
-	transition: 2s ease;
-}
-
-#hero-mewtwo:not(:hover) {
-	transition: 2s ease;
 }
 
 .art {
@@ -191,20 +187,18 @@ nav img {
 	justify-content: center;
 }
 
-@media only screen and (min-width: 873px) {
-	.row1 {
-		display: flex;
-		justify-content: center;
-	}
+
+.art-desc {
+	width: 100%;
 }
 
-.row1 img {
+.turntable, .row1 img{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-	margin: 10px auto;
+	padding: 4% 0;
+	box-sizing: border-box;
 }
-
 @media only screen and (min-width: 873px) {
 	.row1 img {
 		min-width: 40%;
@@ -215,6 +209,31 @@ nav img {
 		max-height: 50%;
 		object-fit: contain;
 	}
+	.row1 {
+		display: flex;
+		justify-content: center;
+	}
+	.turntable {
+		min-width: 40%;
+		min-width: 40%;
+		width: 47%;
+		height: 47%;
+		max-width: 50%;
+		max-height: 50%;
+		object-fit: contain;
+	}
+	.art-desc {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 10%;
+	box-sizing: border-box;
+}
+.art-desc p{
+ margin: 0;
+}
+	
 }
 
 .row2 {
@@ -226,9 +245,10 @@ nav img {
 .row2 div {
 	position: absolute;
 	bottom: 5%;
- left: 50%;
- transform: translate(-50%, -50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
+
 .imglabel {
 	opacity: 75%;
 }
@@ -243,20 +263,21 @@ nav img {
 .art-piece {
 	cursor: pointer;
 }
+
 #noivern-desc {
 	display: block;
 	width: 50%;
 	padding: 20% 0;
-	}
+}
 
 p {
 	text-align: left;
 }
 
 .contact-form {
- display: flex;
- flex-direction: column;
- align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 form {
@@ -265,7 +286,7 @@ form {
 	padding: 10px;
 	gap: 10px;
 	width: 75%;
- 
+
 }
 
 @media only screen and (min-width: 873px) {
@@ -280,7 +301,7 @@ textarea {
 	padding: 5px;
 	outline: none;
 	resize: vertical;
- font-family: "Times New Roman", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 }
 
 .footer {
