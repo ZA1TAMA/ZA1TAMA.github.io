@@ -3,10 +3,14 @@ html {
  font-family: "Times New Roman", Times, serif;
 }
 
+:root {
+	--dark: #14181b;
+	--light: #eef0e9;
+}
 body {
-	background-color: rgb(238, 240, 233);
+	background-color: var(--light);
+	color: var(--dark);
 	margin: 0px;
-	color: black;
 	transition: 0.5s ease;
 	display: flex;
 	flex-direction: column;
@@ -14,8 +18,8 @@ body {
 }
 
 .dark-mode {
-	background-color: rgb(41, 45, 48);
-	color: white;
+	background-color: var(--dark);
+	color: var(--light);
 }
 
 .navbar {
@@ -114,6 +118,7 @@ nav {
 
 .hero h1 {
  margin-top: -31.25%;
+	font-size: 50px;
 }
 
 #hero-gallery {
@@ -125,18 +130,23 @@ nav {
 }
 
 #hero-noivern {
-	background-image: url(assets/noivern-full.jpg);
+	background-image: url(assets/noivern/noivern-full.jpg);
 	padding-top: 75%;
+}
+
+#hero-wukong {
+	background-image: url(assets/wukong/wukong-hero.jpg);
+	padding-top: 56.25%;
 }
 
 #hero-mewtwo-stone {
-	background-image: url(assets/mewtwo-stone.jpg);
-	padding-top: 75%;
+	background-image: url(assets/mewtwo/mewtwo-hero-stone.jpg);
+	padding-top: 56.25%;
 }
 
 #hero-mewtwo {
-	background-image: url(assets/mewtwo.jpg);
-	padding-top: 75%;
+	background-image: url(assets/mewtwo/mewtwo-hero.jpg);
+	padding-top: 56.25%;
 	transform: translateY(-100%);
 }
 
@@ -205,19 +215,15 @@ nav {
 	margin: 10px auto;
 }
 
-#noivern {
+.art-piece {
 	cursor: pointer;
 }
-
-#mewtwo {
-	cursor: pointer;
-}
-
 #noivern-desc {
 	display: block;
 	width: 50%;
 	padding: 20% 0;
-}
+	}
+
 p {
 	text-align: left;
 }

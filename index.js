@@ -1,8 +1,3 @@
-function darkmode() {
-    const element = document.body;
-    element.classList.toggle("dark-mode");
-}
-
 function openTab(name) {
     window.open(name, "_self");
 }
@@ -17,3 +12,32 @@ function togglemenu() {
         m.style.height = "0px";
     }
 }
+
+
+// selectors
+const themeToggleBtn = document.querySelector('.themeToggle');
+
+// state
+const theme = localStorage.getItem('theme');
+
+// on mount
+theme && document.body.classList.add(theme);
+
+// handlers
+handleThemeToggle =() => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark-mode');
+    } else {
+        localStorage.removeItem('theme');
+    }
+};
+// events
+themeToggleBtn.addEventListener('click', handleThemeToggle);
+
+
+
+
+
+
+    
