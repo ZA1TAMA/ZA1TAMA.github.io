@@ -6,7 +6,7 @@ m.style.height = "0px";
 
 function togglemenu() {
     if (m.style.height == "0px") {
-        m.style.height = "15vh";
+        m.style.height = "18vh";
         console.log("pkmn");
     } else {
         m.style.height = "0px";
@@ -16,7 +16,7 @@ function togglemenu() {
 
 // selectors
 const themeToggleBtn = document.querySelector('.themeToggle');
-
+const themeToggleBtn2 = document.querySelector('.themeToggleMobile');
 // state
 const theme = localStorage.getItem('theme');
 
@@ -34,7 +34,7 @@ handleThemeToggle =() => {
 };
 // events
 themeToggleBtn.addEventListener('click', handleThemeToggle);
-
+themeToggleBtn2.addEventListener('click', handleThemeToggle);
 
 
 
