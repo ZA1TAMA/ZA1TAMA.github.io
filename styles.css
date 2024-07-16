@@ -4,13 +4,13 @@ html {
 }
 
 :root {
-	--dark: #14181b;
+	--dark: #292d30;
 	--light: #eef0e9;
 }
 
 body {
 	background-color: var(--light);
-	color: var(--dark);
+	color: black;
 	margin: 0px;
 	transition: 0.5s ease;
 	display: flex;
@@ -20,7 +20,7 @@ body {
 
 .dark-mode {
 	background-color: var(--dark);
-	color: var(--light);
+	color: white;
 }
 
 /* HEADER */
@@ -124,11 +124,6 @@ nav {
 	background-color: rgb(41, 45, 48);
 }
 
-.themeToggle {
-	width: 15px;
-	cursor: pointer;
-}
-
 /*HERO IMAGE*/
 .hero {
 	padding-top: 31.25%;
@@ -182,7 +177,6 @@ nav {
 
 .gallery-title p {
 	text-align: center;
-	opacity: 0;
 }
 
 .row1 {
@@ -252,17 +246,6 @@ nav {
 	position: relative;
 }
 
-.row2 div {
-	position: absolute;
-	bottom: 5%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.imglabel {
-	opacity: 75%;
-}
-
 .row2 img {
 	width: 100%;
 	height: 100%;
@@ -295,7 +278,7 @@ form {
 		}
 	}
 
-input, textarea {
+input, textarea, button{
 	font-size: 30px;
 	padding: 5px;
 	outline: none;
