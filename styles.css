@@ -1,5 +1,4 @@
 html {
-	height: 100%;
 	font-family: "STIX Two Text", Times, serif;
 }
 
@@ -15,7 +14,6 @@ body {
 	transition: 0.5s ease;
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;
 }
 
 .dark-mode {
@@ -129,6 +127,7 @@ nav {
 	background-image: url(assets/mewtwo/mewtwo-hero.jpg);
 	padding-top: 56.25%;
 }
+
 @media only screen and (max-width: 873px) {
 	nav a {
 		display: none;
@@ -164,11 +163,13 @@ nav {
 		cursor: pointer;
 
 	}
+
 	.hero h1 {
-	font-size: 30px;
-	transition: font-size 0.3s ease;
+		font-size: 30px;
+		transition: font-size 0.3s ease;
+	}
 }
-}
+
 /*MAIN ART LAYOUT*/
 .art {
 	padding: 0 8%;
@@ -265,6 +266,8 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 5%;
+	margin-bottom: 20%;
 }
 
 form {
@@ -276,13 +279,16 @@ form {
 
 }
 
+
 @media only screen and (min-width: 873px) {
 	form {
 		width: 40%;
-		}
 	}
+}
 
-input, textarea, button{
+input,
+textarea,
+button {
 	font-size: 30px;
 	padding: 5px;
 	outline: none;
@@ -291,29 +297,30 @@ input, textarea, button{
 }
 
 /*FOOTER*/
-.footer {
+footer {
 	text-align: center;
 	padding: 1% 0;
-	bottom: 0;
 	background-color: black;
 	margin-top: auto;
 	width: 100%;
 }
-
-.footer p {
+main {
+	overflow: hidden;
+}
+footer p {
 	color: white;
 	text-align: center;
 	margin: 0;
 	margin-bottom: 10px;
 }
 
-.footer a {
+footer a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.footer img {
+footer img {
 	width: 30px;
 	height: 30px;
 }
