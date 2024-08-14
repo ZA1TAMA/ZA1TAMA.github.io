@@ -6,6 +6,7 @@ let mewtwoOnOff = false;
 function mewtwo() {
     if (mewtwoOnOff == false) {
         document.getElementById("hero-mewtwo2").style.opacity = "0%";
+        document.getElementById("mewtwoSwitch").style.opacity = "0%";
         mewtwoOnOff = true;
     } else {
         document.getElementById("hero-mewtwo2").style.opacity = "100%";

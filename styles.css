@@ -133,8 +133,17 @@ nav {
 	padding-top: 56.25%;
 	transform: translateY(-100%);
 	margin-bottom: -50%;
-	transition: 3s ease;
+	transition: 3s opacity ease;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+#mewtwoSwitch {
+	color: white;
+	text-align: center;
+	margin-top: -50%;
+	opacity: 70%;
+	transition: 0.5s ease;
 }
 #hero-deer {
 	background-image: url(assets/deer.jpg);
