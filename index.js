@@ -2,7 +2,16 @@ function openNewTab(tabName) {
     window.open("https://zachgenest.ca/" + tabName);
 }
 
-
+let mewtwoOnOff = false;
+function mewtwo() {
+    if (mewtwoOnOff == false) {
+        document.getElementById("hero-mewtwo2").style.opacity = "0%";
+        mewtwoOnOff = true;
+    } else {
+        document.getElementById("hero-mewtwo2").style.opacity = "100%";
+        mewtwoOnOff = false;
+    }
+}
 function openTab(name) {
     window.open(name, "_self");
 }
