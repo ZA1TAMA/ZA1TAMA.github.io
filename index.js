@@ -1,3 +1,8 @@
+function openNewTab(tabName) {
+    window.open("https://zachgenest.ca/" + tabName);
+}
+
+
 function openTab(name) {
     window.open(name, "_self");
 }

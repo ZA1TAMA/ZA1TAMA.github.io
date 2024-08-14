@@ -127,7 +127,18 @@ nav {
 	background-image: url(assets/mewtwo/mewtwo-hero.jpg);
 	padding-top: 56.25%;
 }
-
+#hero-deer {
+	background-image: url(assets/deer.jpg);
+}
+.photo-location {
+	position: absolute;
+	margin-right: 20px;
+	right: 0;
+	transform: translateY(-50px);
+	color: white;
+	opacity: 70%;
+	font-style: italic;
+}
 @media only screen and (max-width: 873px) {
 	nav a {
 		display: none;

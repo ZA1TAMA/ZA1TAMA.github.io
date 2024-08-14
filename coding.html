@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Gallery</title>
+      <title>Coding</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta propery="og:title" content="Zachariah 3D">
@@ -14,7 +14,7 @@
       <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
    </head>
    <body>
-      <header>
+    <header>
          <div class="navbar">
             <nav>
                <img class="menu" src="assets/menu-button.svg" alt="menu" onclick="togglemenu()">
@@ -29,39 +29,22 @@
             <a class="navlinks" href="./coding">Coding</a>
             <a class="navlinks" href="./contact">Contact</a>
          </div>
-         <div class="hero" id="hero-gallery">
-            <h1>Zachariah Genest</h1>
+         <div class="hero" id="hero-deer">        
          </div>
-         <p class="photo-location">Tofukuji Temple - Kyoto, Japan</p>
+         <p class="photo-location">Nara Park - Nara, Japan</p>
       </header>
-      <main>
-      <div class="art">
+   <main>
+    <div class="art">
          <div class="gallery-title">
-            <h1>The Gallery</h1>
-            <p id="pGallery" >Click an image to bring up case study.</p>
+            <h1>Programming Projects</h1>
+            <p id="pGallery" >Click to open project.</p>
          </div>
          <div class="row1">
-            <img class="art-piece" src="assets/wukong/wukong.jpg" alt="wukong" title="Sun Wukong" onclick='openTab("./wukong")'>
-            <img class="art-piece" src="assets/noivern/noivern.jpg" title="Noivern" alt="noivern" onclick='openTab("./noivern")'>
+            <img class="art-piece coding-frame" src="assets/coding/pokedex.jpg" alt="pkmn_enc" title="Pokémon Encyclopedia" onclick='openNewTab("Pokedex")'>
+            <img class="art-piece" src="assets/coding/mandarin.jpg" title="Jiayou Mandarin" alt="jiayou" onclick='openNewTab("Jiayou")'>
          </div>
-         <div class="row2">
-            <img class="art-piece" src="assets/mewtwo/mewtwo.jpg" alt="mewtwo" title="Shadow Mewtwo" onclick='openTab("./shadow-mewtwo")'>
-         </div>
-         <div class="row1">
-            <img src="assets/poke-ball.jpg" alt="poke-ball">
-            <img src="assets/mega-charizard.jpg" title="The Flame Pokémon" alt="mega-charizard">
-         </div>
-         <div class="row2">
-            <img src="assets/regirock.jpg" alt="regirock" title="The Rock Peak Pokémon">
-         </div>
-      </div>   
-      </main> 
-      <footer>
-        <p>Site Programmed by: Zachariah Genest<br>©Dark Nebula</p>
-        <a href="https://www.artstation.com/zaitama">
-        <img src="assets/artstation.png" alt="artstation">    
-        </a>          
-      </footer>
-      <script src="index.js"></script>
+      </div>
+   </main>
+   <script src="index.js"></script>
    </body>
 </html>
