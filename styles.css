@@ -122,7 +122,10 @@ nav {
 	background-image: url(assets/wukong/wukong-hero.jpg);
 	padding-top: 56.25%;
 }
-
+#hero-gameboy {
+	background-image: url(assets/gameboy/gameboy-hero.jpg);
+	padding-top: 56.25%;
+}
 #hero-mewtwo {
 	background-image: url(assets/mewtwo/mewtwo-stone.jpg);
 	padding-top: 56.25%;
