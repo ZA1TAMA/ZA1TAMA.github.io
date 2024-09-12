@@ -64,12 +64,10 @@ nav {
 	display: none;
 }
 
-
 .logo {
 	width: 35px;
 	cursor: pointer;
 	margin-right: 6%;
-
 }
 
 .logo:hover {
@@ -110,7 +108,7 @@ nav {
 }
 
 #hero-contact {
-	background-image: url(assets/shrine.jpg);
+	background-image: url(assets/osaka.jpg);
 }
 
 #hero-noivern {
@@ -122,15 +120,17 @@ nav {
 	background-image: url(assets/wukong/wukong-hero.jpg);
 	padding-top: 56.25%;
 }
+
 #hero-gameboy {
 	background-image: url(assets/gameboy/gameboy-hero.jpg);
 	padding-top: 56.25%;
 }
+
 #hero-mewtwo {
 	background-image: url(assets/mewtwo/mewtwo-stone.jpg);
 	padding-top: 56.25%;
-
 }
+
 #hero-mewtwo2 {
 	background-image: url(assets/mewtwo/mewtwo-hero.jpg);
 	padding-top: 56.25%;
@@ -141,6 +141,7 @@ nav {
 	display: flex;
 	align-items: center;
 }
+
 #mewtwoSwitch {
 	color: white;
 	text-align: center;
@@ -148,6 +149,7 @@ nav {
 	opacity: 70%;
 	transition: 0.5s ease;
 }
+
 #hero-deer {
 	background-image: url(assets/deer.jpg);
 }
@@ -175,7 +177,7 @@ nav {
 
 	#mobilenav {
 		background: black;
-		transition: .3s ease;
+		transition: 0.3s ease;
 		padding-left: 6%;
 		display: flex;
 		flex-direction: column;
@@ -195,7 +197,6 @@ nav {
 	.themeToggleMobile {
 		width: 25px;
 		cursor: pointer;
-
 	}
 
 	.hero h1 {
@@ -205,67 +206,51 @@ nav {
 }
 
 /*MAIN ART LAYOUT*/
-.art {
-	padding: 0 8%;
-	display: block;
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8%;
+}
+.title h1, p {
+ margin: 10px;
+}
+.italic {
+	font-style: italic;
 }
 
-.gallery-title h1 {
-	text-align: center;
+.collage {
+	display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+	margin: 6%;
 }
-
-.gallery-title p {
-	text-align: center;
-}
-
-.row1 {
-	width: 100%;
-	display: block;
-	justify-content: center;
-}
-
-
-.art-desc {
-	width: 100%;
-}
-
-.turntable,
-.row1 img {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	padding: 4% 0;
+.description {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+ padding: 20% 5%;
 	box-sizing: border-box;
 }
 
-@media only screen and (min-width: 873px) {
-	.row1 img {
-		min-width: 40%;
-		min-width: 40%;
-		width: 47%;
-		height: 47%;
-		max-width: 50%;
-		max-height: 50%;
-		object-fit: contain;
+p {
+ font-size: 1.2em;
+}
+.img3-4 {
+ width: 50%;
+ cursor: pointer;
+ }
+ .img16-9 {
+ width: 100%;
+ cursor: pointer;
+ }
+ 
+@media only screen and (max-width: 873px) {
+	.img3-4 {
+		min-width: 100%;
 	}
-
-	.row1 {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.turntable {
-		min-width: 40%;
-		min-width: 40%;
-		width: 47%;
-		height: 47%;
-		max-width: 50%;
-		max-height: 50%;
-		object-fit: contain;
-	}
-
-	.art-desc {
-		width: 50%;
+	.description {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -273,29 +258,12 @@ nav {
 		box-sizing: border-box;
 	}
 
-	.art-desc p {
+	.description p {
 		margin: 0;
 	}
-
 }
 
-.row2 {
-	display: block;
-	text-align: center;
-	position: relative;
-}
-
-.row2 img {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-	margin: 10px auto;
-}
-
-.art-piece {
-	cursor: pointer;
-}
-
+/*CONTACT FORM*/
 .contact-form {
 	display: flex;
 	flex-direction: column;
@@ -310,9 +278,7 @@ form {
 	padding: 10px;
 	gap: 10px;
 	width: 75%;
-
 }
-
 
 @media only screen and (min-width: 873px) {
 	form {

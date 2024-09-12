@@ -1,67 +1,59 @@
 <!-- Site developped by Zachariah Genest -->
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Gallery</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta propery="og:title" content="Zachariah 3D">
-      <meta property="og:image" content="preview.jpg">
-      <link rel="stylesheet" href="styles.css" type="text/css">
-      <link href="assets/zaitama.svg" type="image/x-icon" rel="icon">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-   </head>
-   <body>
-      <header>
-         <div class="navbar">
-            <nav>
-               <img class="menu" src="assets/menu-button.svg" alt="menu" onclick="togglemenu()">
-               <a class="navlinks" href="./">Gallery</a>
-               <a class="navlinks" href="./coding">Coding</a>
-               <a class="navlinks" href="./contact">Contact</a>
-            </nav>
-            <img class="logo themeToggle" src="assets/zaitama.svg" alt="zaitama" onclick="togglemenu()">     
-         </div>
-         <div id="mobilenav">
-            <a class="navlinks" href="./">Gallery</a>
-            <a class="navlinks" href="./coding">Coding</a>
-            <a class="navlinks" href="./contact">Contact</a>
-         </div>
-         <div class="hero" id="hero-gallery">
-            <h1>Zachariah Genest</h1>
-         </div>
-         <p class="photo-location">Tofukuji Temple - Kyoto, Japan</p>
-      </header>
-      <main>
-      <div class="art">
-         <div class="gallery-title">
-            <h1>The Gallery</h1>
-            <p id="pGallery" >Click an image to bring up case study.</p>
-         </div>
-         <div class="row1">
-            <img class="art-piece" src="assets/wukong/wukong.jpg" alt="wukong" title="Sun Wukong" onclick='openTab("./wukong")'>
-            <img class="art-piece" src="assets/gameboy/gameboy.jpg" title="GameBoy Advance SP" alt="gameboy" onclick='openTab("./gameboy")'>
-         </div>
-         <div class="row2">
-            <img class="art-piece" src="assets/mewtwo/mewtwo.jpg" alt="mewtwo" title="Shadow Mewtwo" onclick='openTab("./shadow-mewtwo")'>
-         </div>
-         <div class="row1">
-            <img src="assets/poke-ball.jpg" alt="poke-ball">
-            <img class="art-piece" src="assets/noivern/noivern.jpg" title="Noivern" alt="noivern" onclick='openTab("./noivern")'>
-         </div>
-         <div class="row2">
-            <img src="assets/regirock.jpg" alt="regirock" title="The Rock Peak Pokémon">
-         </div>
-      </div>   
-      </main> 
-      <footer>
-        <p>Site Programmed by: Zachariah Genest | All images created by me<br>©Dark Nebula</p>
-        <a href="https://www.artstation.com/zaitama">
-        <img src="assets/artstation.png" alt="artstation">    
-        </a>          
-      </footer>
-      <script src="index.js"></script>
-   </body>
+  <head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta propery="og:title" content="Zachariah 3D">
+    <meta property="og:image" content="preview.jpg">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="assets/zaitama.svg" type="image/x-icon" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <img class="menu" src="assets/menu-button.svg" alt="menu" onclick="togglemenu()">
+          <a class="navlinks" href="./">Gallery</a>
+          <a class="navlinks" href="./coding">Coding</a>
+          <a class="navlinks" href="./contact">Contact</a>
+        </nav>
+        <img class="logo themeToggle" src="assets/zaitama.svg" alt="zaitama" onclick="togglemenu()">
+      </div>
+      <div id="mobilenav">
+        <a class="navlinks" href="./">Gallery</a>
+        <a class="navlinks" href="./coding">Coding</a>
+        <a class="navlinks" href="./contact">Contact</a>
+      </div>
+      <div class="hero" id="hero-gallery">
+        <h1>Zachariah Genest</h1>
+      </div>
+      <p class="photo-location">Tofukuji Temple - Kyoto, Japan</p>
+    </header>
+    <main>
+      <div class="title">
+      <h1>The Gallery</h1>
+      <p>Click an image to bring up case study.</p>   
+      </div>
+      <div class="collage">
+          <img class="img3-4" src="assets/wukong/wukong.jpg" alt="wukong" title="Sun Wukong" onclick='openTab("./wukong")'>
+          <img class="img3-4" src="assets/gameboy/gameboy.jpg" title="GameBoy Advance SP" alt="gameboy" onclick='openTab("./gameboy")'>
+          <img class="img16-9" src="assets/mewtwo/mewtwo.jpg" alt="mewtwo" title="Shadow Mewtwo" onclick='openTab("./shadow-mewtwo")'>    
+          <img class="img3-4" src="assets/poke-ball.jpg" alt="poke-ball">
+          <img class="img3-4" src="assets/noivern/noivern.jpg" title="Noivern" alt="noivern" onclick='openTab("./noivern")'>
+          <img class="img16-9" src="assets/regirock.jpg" alt="regirock" title="The Rock Peak Pokémon">
+      </div>
+    </main>
+    <footer>
+      <p>Site Programmed by: Zachariah Genest | All images created by me <br>©Dark Nebula </p>
+      <a href="https://www.artstation.com/zaitama">
+        <img src="assets/artstation.png" alt="artstation">
+      </a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
