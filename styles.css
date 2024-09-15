@@ -271,7 +271,14 @@ p {
 	margin-top: 5%;
 	margin-bottom: 20%;
 }
-
+.download {
+	text-decoration: none;
+	color: rgb(13, 164, 255);
+	transition: color 0.3s ease;
+}
+.download:hover {
+ color: rgb(8, 114, 177);
+}
 form {
 	display: flex;
 	flex-direction: column;
