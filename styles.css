@@ -45,6 +45,7 @@ nav {
 	font-size: 30px;
 	color: white;
 	margin-right: 20px;
+	width: 100px;
 }
 
 .navlinks:hover {
@@ -332,6 +333,7 @@ main {
 
 footer p {
 	color: white;
+	font-size: 15px;
 	text-align: center;
 	margin: 0;
 	margin-bottom: 10px;
