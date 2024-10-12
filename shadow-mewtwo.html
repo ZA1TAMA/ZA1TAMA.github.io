@@ -13,7 +13,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
    </head>
-   <body>
+   <body onload="checkTheme()">
       <header>
          <div class="navbar">
             <nav>
@@ -35,11 +35,11 @@
          
       </header>
       <div class="collage">
-            <video class="img3-4" id="turntable-dark" controls muted>
+            <video class="img3-4" id="ttDark" controls muted>
                <source src="assets/mewtwo/turntable_dark.mp4" alt="mewtwo"type="video/mp4">
                Your browser does not support the video tag.
             </video>
-            <video class="img3-4" id="turntable-light" controls muted>
+            <video class="img3-4 turntable-active" id="ttLight" controls muted>
                <source src="assets/mewtwo/turntable_light.mp4" alt="mewtwo"type="video/mp4">
                Your browser does not support the video tag.
             </video>

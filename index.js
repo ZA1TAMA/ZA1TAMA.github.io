@@ -30,37 +30,37 @@ function togglemenu() {
 
 // selectors
 const themeToggleBtn = document.querySelector('.themeToggle');
-const turntableDark = document.getElementById("turntable-dark");
-const turntableLight = document.getElementById("turntable-light");
+const ttDark = document.getElementById('ttDark');
+const ttLight = document.getElementById('ttLight');
 // state
 const theme = localStorage.getItem('theme');
-const lightTT = localStorage.getItem('lightTT');
-const darkTT = localStorage.getItem('darkTT');
 
 // on mount
 theme && document.body.classList.add(theme);
-lightTT && turntableLight.classList.add(lightTT);
-darkTT & turntableDark.classList.add(darkTT);
+
 // handlers
 handleThemeToggle =() => {
     document.body.classList.toggle('dark-mode');
-    turntableLight.classList.toggle('turntable-active');
-    turntableDark.classList.toggle('turntable-active');
-    
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark-mode');
-        localStorage.setItem('lightTT', 'turntable-active');
-        localStorage.removeItem('darkTT');
+        ttDark.classList.add('turntable-active');
+        ttLight.classList.remove('turntable-active');
     } else {
         localStorage.removeItem('theme');
-        localStorage.removeItem('lightTT');
-        localStorage.setItem('darkTT', 'turntable-active');
+        ttLight.classList.toggle('turntable-active');
+        ttDark.classList.remove('turntable-active');
     }
 };
 // events
 themeToggleBtn.addEventListener('click', handleThemeToggle);
 
 
+function checkTheme() {
+    if (document.body.classList.contains('dark-mode')){
+        ttDark.classList.add('turntable-active');
+        ttLight.classList.remove('turntable-active');
+    }
+};
 
 
 
