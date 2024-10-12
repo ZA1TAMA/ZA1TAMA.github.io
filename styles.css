@@ -21,6 +21,10 @@ body {
 	color: white;
 }
 
+.turntable-active {
+	display: none;
+}
+
 /* HEADER */
 header {
 	overflow: hidden;
@@ -253,12 +257,7 @@ p {
 	cursor: pointer;
 }
 
-#turntable-dark {
-	display: none;
-}
-#turntable-light {
-	display: flex;
-}
+
 @media only screen and (max-width: 873px) {
 	.img3-4 {
 		min-width: 100%;

@@ -34,21 +34,27 @@ const turntableDark = document.getElementById("turntable-dark");
 const turntableLight = document.getElementById("turntable-light");
 // state
 const theme = localStorage.getItem('theme');
+const lightTT = localStorage.getItem('lightTT');
+const darkTT = localStorage.getItem('darkTT');
 
 // on mount
 theme && document.body.classList.add(theme);
-
+lightTT && turntableLight.classList.add(lightTT);
+darkTT & turntableDark.classList.add(darkTT);
 // handlers
 handleThemeToggle =() => {
     document.body.classList.toggle('dark-mode');
+    turntableLight.classList.toggle('turntable-active');
+    turntableDark.classList.toggle('turntable-active');
+    
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark-mode');
-        turntableDark.style.display = "flex";
-        turntableLight.style.display = "none";     
+        localStorage.setItem('lightTT', 'turntable-active');
+        localStorage.removeItem('darkTT');
     } else {
         localStorage.removeItem('theme');
-        turntableDark.style.display = "none";
-        turntableLight.style.display = "flex";
+        localStorage.removeItem('lightTT');
+        localStorage.setItem('darkTT', 'turntable-active');
     }
 };
 // events
