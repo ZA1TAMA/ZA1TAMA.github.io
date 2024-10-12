@@ -31,6 +31,8 @@ function togglemenu() {
 
 // selectors
 const themeToggleBtn = document.querySelector('.themeToggle');
+const turntableDark = document.getElementById("turntable-dark");
+const turntableLight = document.getElementById("turntable-light");
 // state
 const theme = localStorage.getItem('theme');
 
@@ -42,8 +44,13 @@ handleThemeToggle =() => {
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark-mode');
+        turntableDark.style.display = "flex";
+        turntableLight.style.display = "none";
+        
     } else {
         localStorage.removeItem('theme');
+        turntableDark.style.display = "none";
+        turntableLight.style.display = "flex";
     }
 };
 // events
