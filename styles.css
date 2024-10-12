@@ -253,10 +253,10 @@ p {
 	cursor: pointer;
 }
 
-.turntable-dark {
+#turntable-dark {
 	display: none;
 }
-.turntable-light {
+#turntable-light {
 	display: flex;
 }
 @media only screen and (max-width: 873px) {

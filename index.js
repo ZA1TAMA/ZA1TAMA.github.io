@@ -22,7 +22,6 @@ m.style.height = "0px";
 function togglemenu() {
     if (m.style.height == "0px") {
         m.style.height = "18vh";
-        console.log("pkmn");
     } else {
         m.style.height = "0px";
     }
@@ -45,8 +44,7 @@ handleThemeToggle =() => {
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark-mode');
         turntableDark.style.display = "flex";
-        turntableLight.style.display = "none";
-        
+        turntableLight.style.display = "none";     
     } else {
         localStorage.removeItem('theme');
         turntableDark.style.display = "none";
