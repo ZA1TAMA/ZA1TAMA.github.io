@@ -255,12 +255,14 @@ p {
 
 .img3-4 {
 	width: 50%;
+
+}
+.clickableIMG {
 	cursor: pointer;
 }
-
 .img16-9 {
 	width: 100%;
-	cursor: pointer;
+
 }
 
 
