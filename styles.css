@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-	--dark: #292d30;
+	--dark: #14181b;
 	--light: #eef0e9;
 }
 
@@ -41,34 +41,39 @@ header {
 
 #linkbox1 {
 	flex: 1;
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	margin-left: 6%;
 	font-weight: 600;
 }
 #linkbox2 {
-	display: inline-block;
-	margin-right: 6%;
+	display: flex;
+	margin-right: 2%;
 	font-weight: 600;
 }
-
+#linkbox2 .navlinks {
+	margin-left: 30px;
+}
 .navlinks {
+	display : flex;
+	align-items: center;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 32px;
 	color: white;
-	margin-right: 20px;
-	width: 100px;
 }
 
 .navlinks:hover {
 	transition: 0.3s ease;
-	color: #e3dff0;
+	color: #cb8f5d;
 }
-
+.navlinks:active {
+	color: #7e5939;
+}
 .navlinks:not(:hover) {
 	transition: 0.3s ease;
 }
 
-.menu {
+.menubox {
 	display: none;
 }
 
@@ -79,17 +84,23 @@ header {
 .logo {
 	width: 35px;
 	cursor: pointer;
+	transition: 0.3s ease;
+	margin-right: 6%;
+}
+.logobox {
+	margin-right: 6%;
 }
 
 .logo:hover {
-	transform: rotate(45deg);
-	transition: 0.3s ease;
+	background-color: #cb8f5d;
 }
 
 .logo:not(:hover) {
-	transition: 0.3s ease;
 }
-
+.logo:active {
+	transform: rotate(270deg);
+	transition: .5s ease;
+}
 /*HERO IMAGE*/
 .hero {
 	padding-top: 31.25%;
@@ -139,13 +150,15 @@ header {
 		display: none;
 	}
 
-	.menu {
+	.menubox {
 		margin-left: 6%;
-		display: block;
-		width: 35px;
+		display: flex;
+		flex: 1;
 		cursor: pointer;
 	}
-
+.menu {
+	width: 35px;
+}
 	#mobilenav {
 		background: black;
 		transition: 0.3s ease;
@@ -196,7 +209,7 @@ header {
 	font-size: 22px;
 }
 .about div img {
-	height: 100%;
+	width: 100%;
 }
 
 /*Collage*/
@@ -227,6 +240,14 @@ header {
 @media only screen and (max-width: 873px) {
 	.hori_thumbnail {
 		max-width: 80%;
+	}
+	.about {
+		flex-direction: column;
+		margin: 20px 10%;
+		height: 100%;
+	}
+	.about div {
+		width: 100%;
 	}
 }
 /*CONTACT FORM*/

@@ -12,7 +12,7 @@ m.style.height = "0px";
 
 function togglemenu() {
     if (m.style.height == "0px") {
-        m.style.height = "18vh";
+        m.style.height = "100px";
     } else {
         m.style.height = "0px";
     }
