@@ -8,8 +8,8 @@ html {
 }
 
 body {
-	background-color: var(--light);
-	color: black;
+	background-color: var(--dark);
+	color: white;
 	margin: 0px;
 	transition: 0.5s ease;
 	display: flex;
@@ -23,13 +23,6 @@ body {
 .turntable-active {
 	display: flex !important;
 }
-#ttDark {
-	display: none;	
-}
-
-#ttLight {
-	display: none;	
-}
 
 /* HEADER */
 header {
@@ -42,12 +35,20 @@ header {
 	align-items: center;
 	background-color: black;
 	padding: 10px 0;
+	height: 55px;
+	box-sizing: border-box;
 }
 
-nav {
+#linkbox1 {
 	flex: 1;
 	display: inline-block;
 	margin-left: 6%;
+	font-weight: 600;
+}
+#linkbox2 {
+	display: inline-block;
+	margin-right: 6%;
+	font-weight: 600;
 }
 
 .navlinks {
@@ -60,7 +61,7 @@ nav {
 
 .navlinks:hover {
 	transition: 0.3s ease;
-	color: rgb(230, 183, 144);
+	color: #e3dff0;
 }
 
 .navlinks:not(:hover) {
@@ -78,21 +79,15 @@ nav {
 .logo {
 	width: 35px;
 	cursor: pointer;
-	margin-right: 6%;
 }
 
 .logo:hover {
-	background-color: rgb(230, 183, 144);
 	transform: rotate(45deg);
 	transition: 0.3s ease;
 }
 
 .logo:not(:hover) {
 	transition: 0.3s ease;
-}
-
-.logo:active {
-	background-color: rgb(41, 45, 48);
 }
 
 /*HERO IMAGE*/
@@ -122,49 +117,13 @@ nav {
 	background-image: url(assets/osaka.jpg);
 }
 
-#hero-noivern {
-	background-image: url(assets/noivern/noivern-full.jpg);
-	padding-top: 75%;
-}
-
-#hero-wukong {
-	background-image: url(assets/wukong/wukong-hero.jpg);
-	padding-top: 56.25%;
-}
-
-#hero-gameboy {
-	background-image: url(assets/gameboy/gameboy-hero.jpg);
-	padding-top: 56.25%;
-}
-
-#hero-mewtwo {
-	background-image: url(assets/mewtwo/mewtwo-stone.jpg);
-	padding-top: 56.25%;
-}
-
-#hero-mewtwo2 {
-	background-image: url(assets/mewtwo/mewtwo-hero.jpg);
-	padding-top: 56.25%;
-	transform: translateY(-100%);
-	margin-bottom: -50%;
-	transition: 3s opacity ease;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-}
-
-#mewtwoSwitch {
-	color: white;
-	text-align: center;
-	margin-top: -50%;
-	opacity: 70%;
-	transition: 0.5s ease;
-}
-
 #hero-deer {
 	background-image: url(assets/deer.jpg);
 }
-
+#hero-mountain {
+	background-image: url(assets/mountain.jpg);
+	opacity: 50%;
+}
 .photo-location {
 	position: absolute;
 	margin-right: 20px;
@@ -176,11 +135,12 @@ nav {
 }
 
 @media only screen and (max-width: 873px) {
-	nav a {
+	#linkbox1, #linkbox2 {
 		display: none;
 	}
 
 	.menu {
+		margin-left: 6%;
 		display: block;
 		width: 35px;
 		cursor: pointer;
@@ -216,76 +176,61 @@ nav {
 	}
 }
 
-/*MAIN ART LAYOUT*/
-.title {
+
+/*Main*/
+.about {
+	height: 600px;
+	display: flex;
+	margin: 50px 20%;
+}
+.about div {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+.description {
+	padding: 0 10%;
+	font-size: 22px;
+}
+.about div img {
+	height: 100%;
+}
+
+/*Collage*/
+.collage {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 4%;
+	height: 60%;
 }
-
-.title h1,
-p {
-	margin: 10px;
-}
-
-.italic {
-	font-style: italic;
-}
-
-.collage {
+.hori {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
-	margin: 6%;
 }
-
-.description {
+.hori_thumbnail {
 	display: flex;
-	flex-direction: column;
-	width: 50%;
-	padding: 20% 5%;
-	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	max-width: 40%;
+	transition: 0.3s ease;
 }
-
-p {
-	font-size: 1.2em;
-	margin: 0;
-}
-
-.img3-4 {
-	width: 50%;
-	cursor: pointer;
-}
-
-.img16-9 {
+.hori_thumbnail img {
 	width: 100%;
-	cursor: pointer;
 }
-
-
+.hori_thumbnail:hover {
+	opacity: 0.5;
+}
 @media only screen and (max-width: 873px) {
-	.img3-4 {
-		min-width: 100%;
-	}
-
-	.description {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding: 0 10%;
-		box-sizing: border-box;
-	}
-
-	.description p {
-		margin: 0;
+	.hori_thumbnail {
+		max-width: 80%;
 	}
 }
-
 /*CONTACT FORM*/
-
-.headshot {
+.headshot2 {
 	width: 150px;
 }
 .contact-form {
@@ -339,9 +284,6 @@ footer {
 	width: 100%;
 }
 
-main {
-	overflow: hidden;
-}
 
 footer p {
 	color: white;

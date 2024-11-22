@@ -3,7 +3,7 @@ class SpecialFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <footer>
-            <p>Site Programmed by: Zach Genest | All images created by me <br>©Dark Nebula </p>
+            <p>Programmed by: Zach Genest | All photos taken by me <br>©Dark Nebula </p>
             <div class="social-links">
             <a href="https://www.artstation.com/zaitama">
             <img src="assets/icons/artstation.svg" alt="artstation">

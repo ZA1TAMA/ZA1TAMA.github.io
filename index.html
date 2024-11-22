@@ -1,54 +1,53 @@
-<!-- Site developped by Zachariah Genest -->
+<!-- Site developped by Zach Genest -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Gallery</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property="og:title" content="Zachariah 3D">
-    <meta property="og:image" content="preview.jpg">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <link href="assets/zaitama.svg" type="image/x-icon" rel="icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <nav>
-          <img class="menu" src="assets/menu-button.svg" alt="menu" onclick="togglemenu()">
-          <a class="navlinks" href="./">Gallery</a>
-          <a class="navlinks" href="./coding">Coding</a>
-          <a class="navlinks" href="./contact">Contact</a>
-        </nav>
-        <img class="logo themeToggle" src="assets/zaitama.svg" alt="zaitama" onclick="togglemenu()">
-      </div>
-      <div id="mobilenav">
-        <a class="navlinks" href="./">Gallery</a>
-        <a class="navlinks" href="./coding">Coding</a>
-        <a class="navlinks" href="./contact">Contact</a>
-      </div>
-    </header><div class="hero" id="hero-gallery">
-      <h1>Zach Genest</h1>
+<head>
+  <title>Zach Genest</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:title" content="Zach Genest">
+  <meta property="og:image" content="preview.jpg">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link href="assets/icons/zcube.svg" type="image/x-icon" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div class="navbar">
+    <img class="menu" src="bitmaplight.svg" alt="menu" onclick="togglemenu()">
+    <div id="linkbox1">
+      <a class="navlinks" href="./">Zach Genest</a>
     </div>
-    <p class="photo-location">Tofukuji Temple - Kyoto, Japan</p>
-    <main>
-      <div class="title">
-      <h1>The Gallery</h1>
-      <p>Click an image to bring up case study.</p>   
-      </div>
-      <div class="collage">
-          <img class="img3-4" src="assets/wukong/wukong.jpg" alt="wukong" title="Sun Wukong" onclick='openTab("./wukong")'>
-          <img class="img3-4" src="assets/gameboy/gameboy.jpg" title="GameBoy Advance SP" alt="gameboy" onclick='openTab("./gameboy")'>
-          <img class="img16-9" src="assets/mewtwo/mewtwo.jpg" alt="mewtwo" title="Shadow Mewtwo" onclick='openTab("./shadow-mewtwo")'>    
-          <img class="img3-4" src="assets/poke-ball.jpg" alt="poke-ball">
-          <img class="img3-4" src="assets/noivern/noivern.jpg" title="Noivern" alt="noivern" onclick='openTab("./noivern")'>
-          <img class="img16-9" src="assets/regirock.jpg" alt="regirock" title="The Rock Peak Pokémon">
-      </div>
-    </main>
-    <special-footer></special-footer>
-    <script src="index.js"></script>
-    <script src="headerFooterManager.js"></script>
-  </body>
+    <div id="linkbox2">
+      <a class="navlinks" href="./">Gallery</a>
+      <a class="navlinks" href="./contact">Contact</a>
+    </div>
+  </div>
+  <div id="mobilenav">
+    <a class="navlinks" href="./">Gallery</a>
+    <a class="navlinks" href="./contact">Contact</a>
+  </div>
+</header>
+<div class="hero" id="hero-gallery">
+  <p class="photo-location">Tofukuji Temple - Kyoto, Japan</p>
+</div>
+<main>
+  <div class="about">
+    <div>
+      <img class="headshot" src="assets/headshot.jpg" alt="headshot">
+    </div>
+    <div class="description">
+      <h1>About Me</h1>
+      <p>I am a professional video editor with over 4 years of industry experience. My skillset ranges from videography, post-production, social media and 3D graphics with a heavy attention to detail and innovative design.</p>
+    </div>
+  </div>
+</main>
+<special-footer></special-footer>
+<script src="index.js"></script>
+<script src="headerFooterManager.js"></script>
+</body>
+
 </html>

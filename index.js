@@ -1,21 +1,12 @@
+// New Window
 function openNewTab(tabName) {
     window.open("https://zachgenest.ca/" + tabName);
-}
-
-let mewtwoOnOff = false;
-function mewtwo() {
-    if (mewtwoOnOff == false) {
-        document.getElementById("hero-mewtwo2").style.opacity = "0%";
-        document.getElementById("mewtwoSwitch").style.opacity = "0%";
-        mewtwoOnOff = true;
-    } else {
-        document.getElementById("hero-mewtwo2").style.opacity = "100%";
-        mewtwoOnOff = false;
-    }
 }
 function openTab(name) {
     window.open(name, "_self");
 }
+
+//--Mobile--
 const m = document.getElementById("mobilenav");
 m.style.height = "0px";
 
@@ -28,6 +19,7 @@ function togglemenu() {
 }
 
 
+//--DARK MODE--
 // selectors
 const themeToggleBtn = document.querySelector('.themeToggle');
 const ttDark = document.getElementById('ttDark');
