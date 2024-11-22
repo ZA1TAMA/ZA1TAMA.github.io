@@ -191,6 +191,11 @@ header {
 
 
 /*Main*/
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .about {
 	height: 600px;
 	display: flex;
@@ -236,6 +241,15 @@ header {
 }
 .hori_thumbnail:hover {
 	opacity: 0.5;
+}
+.alliances {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 40%;
+}
+.allylogo {
+	height: 50px;
 }
 @media only screen and (max-width: 873px) {
 	.hori_thumbnail {
@@ -301,7 +315,7 @@ footer {
 	text-align: center;
 	padding: 1% 0;
 	background-color: black;
-	margin-top: auto;
+	margin-top: 30px;
 	width: 100%;
 }
 
