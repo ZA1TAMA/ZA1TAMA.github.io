@@ -1,0 +1,69 @@
+{
+    "nav":
+    {
+        "gallery": "GALERIE",
+        "vfxPacks": "PACKS D'EFFETS VISUELS",
+        "contact": "CONTACT"
+    },
+
+    "home": 
+    {
+        "heroOverlay": "Contenu de Niveau Épique",
+        "galleryBtn": "Galerie",
+        "aboutParagraph": "Vidéaste professionnel et editeur de vidéo basé à Montréal avec un sens aigu du visuel et de la narration.",
+        "vfxPacksHeader": "Packs d'Effets Visuels",
+        "vfxPacksDesc": "Effets visuels de niveau épique",
+        "vfxPacksDesc2": "pour le contenu d'action",
+        "vfxPacksBtn": "Packs",
+        "workedWithHeader": "Avec Qui j'ai Travaillé",
+
+        "contactForm": 
+        {
+            "header": "Travaillons ensemble!",
+            "namePlaceholder": "Nom",
+            "emailPlaceholder": "Addresse Courriel",
+            "messagePlaceholder": "Message",
+            "submitBtn": "Envoyer"
+        }
+    },
+
+    "home2": 
+    {
+        "aboutMeHeader": "À propos de moi",
+        "aboutMeDescription": "Je suis un monteur vidéo professionnel avec plus de 4 ans d'expérience dans l'industrie. Mes compétences vont de la vidéographie, de la post-production, des médias sociaux et du graphisme 3D avec une grande attention aux détails et un design innovant.",
+        "clientWorkHeader": "Travail pour Clients"
+    },
+
+    "contact": 
+    {
+        "header": "Contactez-moi",
+        "namePlaceholder": "Nom*",
+        "emailPlaceholder": "Addresse Courriel*",
+        "messagePlaceholder": "Message*",
+        "submitBtn": "Soumettre*",
+        "quote": "Les choses que vous faites aujourd'hui peuvent mener à ce que vous faites demain"
+    },
+
+    "gallery":
+    {
+        "mainHeader": "Galerie",
+        "videoEditingHeader": "Montage Video",
+        "motionGraphicsHeader": "Graphiques Animés",
+        "interviewHeader": "Entrevue"
+    },
+
+    "vfxPacks":
+    {
+        "mainHeader": "Packs d'Effets Visuels",
+        
+        "fireHeader": "Feu",
+        "fireDesc": "Un gabarit simple et",
+        "fireDesc2": "polyvalent pour After Effects",
+        "fireDownloadBtn": "Télécharger"
+    },
+
+    "footer":
+    {
+        "credit": "Site programmé par Ethan Briffett | Toutes les photos ont été prises par moi"
+    }
+}
