@@ -1,0 +1,64 @@
+<!-- Site developped by Zachariah Genest -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta propery="og:title" content="Zachariah 3D">
+    <meta property="og:image" content="preview.jpg">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="assets/icons/zcube.svg" type="image/x-icon" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <nav>
+            <img class="menu" src="assets/menu-button.svg" alt="menu" onclick="togglemenu()">
+            <a class="navlinks" href="./">Gallery</a>
+
+            <a class="navlinks" href="./contact">Contact</a>
+        </nav>
+        <img class="logo themeToggle" src="assets/zaitama.svg" alt="zaitama" onclick="togglemenu()">
+    </div>
+    <div id="mobilenav">
+        <a class="navlinks" href="./">Gallery</a>
+
+        <a class="navlinks" href="./contact">Contact</a>
+    </div>
+    <div class="hero" id="hero-contact">
+    </div>
+    <p class="photo-location">Osaka Castle - Osaka, Japan</p>
+</header>
+<main>
+    <div class="contact-form">
+        <img class="headshot" src="assets/headshot.png" alt="headshot">
+        <div class="title">
+            <h1>Contact Me</h1>
+            <p>admin@zachgenest.ca</p>
+            <a class="download" href="assets/ZG_2024.pdf" download>
+                <p>(Resume)</p>
+            </a>
+        </div>
+        <form
+                action="https://formspree.io/f/xnnanvnr"
+                method="POST"
+        >
+            <input placeholder="Name*" name="name" required>
+            <input type="email" placeholder="E-mail*" name="email" required>
+            <textarea placeholder="Message*" name="message" rows="7" required></textarea>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+        <p class="title">"The things you make today can lead to what you make tomorrow"<br>
+            - Masahiro Sakurai</p>
+    </div>
+</main>
+<special-footer></special-footer>
+<script src="index.js"></script>
+<script src="headerFooterManager.js"></script>
+</body>
+</html>

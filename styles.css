@@ -1,0 +1,374 @@
+html {
+	font-family: "STIX Two Text", Times, serif;
+}
+
+:root {
+	--dark: #292d30;
+	--light: #eef0e9;
+}
+
+body {
+	background-color: var(--light);
+	color: black;
+	margin: 0px;
+	transition: 0.5s ease;
+	display: flex;
+	flex-direction: column;
+}
+
+.dark-mode {
+	background-color: var(--dark);
+	color: white;
+}
+.turntable-active {
+	display: flex !important;
+}
+#ttDark {
+	display: none;	
+}
+
+#ttLight {
+	display: none;	
+}
+
+/* HEADER */
+header {
+	overflow: hidden;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	padding: 10px 0;
+}
+
+nav {
+	flex: 1;
+	display: inline-block;
+	margin-left: 6%;
+}
+
+.navlinks {
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+	margin-right: 20px;
+	width: 100px;
+}
+
+.navlinks:hover {
+	transition: 0.3s ease;
+	color: rgb(230, 183, 144);
+}
+
+.navlinks:not(:hover) {
+	transition: 0.3s ease;
+}
+
+.menu {
+	display: none;
+}
+
+#mobilenav {
+	display: none;
+}
+
+.logo {
+	width: 35px;
+	cursor: pointer;
+	margin-right: 6%;
+}
+
+.logo:hover {
+	background-color: rgb(230, 183, 144);
+	transform: rotate(45deg);
+	transition: 0.3s ease;
+}
+
+.logo:not(:hover) {
+	transition: 0.3s ease;
+}
+
+.logo:active {
+	background-color: rgb(41, 45, 48);
+}
+
+/*HERO IMAGE*/
+.hero {
+	padding-top: 31.25%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: font-size 0.3s ease;
+}
+
+.hero h1 {
+	font-size: 50px;
+	margin-top: -31.25%;
+}
+
+#hero-gallery {
+	background-image: url(assets/wanderer.jpg);
+}
+
+#hero-contact {
+	background-image: url(assets/osaka.jpg);
+}
+
+#hero-noivern {
+	background-image: url(assets/noivern/noivern-full.jpg);
+	padding-top: 75%;
+}
+
+#hero-wukong {
+	background-image: url(assets/wukong/wukong-hero.jpg);
+	padding-top: 56.25%;
+}
+
+#hero-gameboy {
+	background-image: url(assets/gameboy/gameboy-hero.jpg);
+	padding-top: 56.25%;
+}
+
+#hero-mewtwo {
+	background-image: url(assets/mewtwo/mewtwo-stone.jpg);
+	padding-top: 56.25%;
+}
+
+#hero-mewtwo2 {
+	background-image: url(assets/mewtwo/mewtwo-hero.jpg);
+	padding-top: 56.25%;
+	transform: translateY(-100%);
+	margin-bottom: -50%;
+	transition: 3s opacity ease;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+#mewtwoSwitch {
+	color: white;
+	text-align: center;
+	margin-top: -50%;
+	opacity: 70%;
+	transition: 0.5s ease;
+}
+
+#hero-deer {
+	background-image: url(assets/deer.jpg);
+}
+
+.photo-location {
+	position: absolute;
+	margin-right: 20px;
+	right: 0;
+	transform: translateY(-50px);
+	color: white;
+	opacity: 70%;
+	font-style: italic;
+}
+
+@media only screen and (max-width: 873px) {
+	nav a {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+		width: 35px;
+		cursor: pointer;
+	}
+
+	#mobilenav {
+		background: black;
+		transition: 0.3s ease;
+		padding-left: 6%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	#mobilenav a {
+		margin: 0 0;
+		margin-bottom: 10px;
+	}
+
+	nav img {
+		display: none;
+	}
+
+	.themeToggleMobile {
+		width: 25px;
+		cursor: pointer;
+	}
+
+	.hero h1 {
+		font-size: 30px;
+		transition: font-size 0.3s ease;
+	}
+}
+
+/*MAIN ART LAYOUT*/
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4%;
+}
+
+.title h1,
+p {
+	margin: 10px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.collage {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 6%;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 20% 5%;
+	box-sizing: border-box;
+}
+
+p {
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.img3-4 {
+	width: 50%;
+
+}
+.clickableIMG {
+	cursor: pointer;
+}
+.img16-9 {
+	width: 100%;
+
+}
+
+
+@media only screen and (max-width: 873px) {
+	.img3-4 {
+		min-width: 100%;
+	}
+
+	.description {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 10%;
+		box-sizing: border-box;
+	}
+
+	.description p {
+		margin: 0;
+	}
+}
+
+/*CONTACT FORM*/
+
+.headshot {
+	width: 150px;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5%;
+	margin-bottom: 20%;
+}
+
+.download {
+	text-decoration: none;
+	color: rgb(13, 164, 255);
+	transition: color 0.3s ease;
+}
+
+.download:hover {
+	color: rgb(8, 114, 177);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	gap: 10px;
+	width: 75%;
+}
+
+@media only screen and (min-width: 873px) {
+	form {
+		width: 40%;
+	}
+}
+
+input,
+textarea,
+button {
+	font-size: 30px;
+	padding: 5px;
+	outline: none;
+	resize: vertical;
+	font-family: "STIX Two Text", Times, serif;
+}
+
+/*FOOTER*/
+footer {
+	text-align: center;
+	padding: 1% 0;
+	background-color: black;
+	margin-top: auto;
+	width: 100%;
+}
+
+main {
+	overflow: hidden;
+}
+
+footer p {
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer img {
+	width: 30px;
+	height: 30px;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+}
+
+.social-links img {
+	margin: 0 10px;
+}
