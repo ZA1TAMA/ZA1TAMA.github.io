@@ -5,7 +5,7 @@ class SpecialFooter extends HTMLElement {
         <footer>
             <p>Site Programmed by: Zach Genest | All images created by me <br>©Dark Nebula </p>
             <div class="social-links">
-            <a href="https://www.artstation.com/zaitama">
+            <a href="https://www.artstation.com/zachgenest">
             <img src="assets/icons/artstation.svg" alt="artstation">
             </a>
             <a href="https://github.com/ZA1TAMA">

@@ -119,11 +119,15 @@ nav {
 }
 
 #hero-contact {
-	background-image: url(assets/osaka.jpg);
+	background-image: url(assets/Gyeongbokgung.jpg);
 }
 
 #hero-noivern {
 	background-image: url(assets/noivern/noivern-full.jpg);
+	padding-top: 75%;
+}
+#hero-regirock {
+	background-image: url(assets/regirock.jpg);
 	padding-top: 75%;
 }
 
@@ -131,7 +135,10 @@ nav {
 	background-image: url(assets/wukong/wukong-hero.jpg);
 	padding-top: 56.25%;
 }
-
+#hero-bronze {
+	background-image: url(assets/bronze/bronze-hero.jpg);
+	padding-top: 56.25%;
+}
 #hero-gameboy {
 	background-image: url(assets/gameboy/gameboy-hero.jpg);
 	padding-top: 56.25%;
