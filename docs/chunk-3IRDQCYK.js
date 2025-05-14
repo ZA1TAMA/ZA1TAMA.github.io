@@ -1,0 +1,3 @@
+import{a as c}from"./chunk-MMGXPGNN.js";import{b as m}from"./chunk-G7V2U3ZN.js";import{Fa as s,ca as n,ia as o,qa as i,wa as p,xa as r,ya as a}from"./chunk-QGPVHO6R.js";var d=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-deer"]],decls:4,vars:4,consts:[["imageUrl","assets/hero/contact.png"],[1,"main-content"],[3,"isVideoArt","videoFileName","titleText","descriptionText"]],template:function(e,f){e&1&&(a(0,"app-hero",0),p(1,"div",1)(2,"app-art-display",2),s(3,`
+>
+`),r()()),e&2&&(n(2),i("isVideoArt",!0)("videoFileName","deer_light.mp4")("titleText","Deer")("descriptionText","A quick anatomical study of a deer. This was sculpted in ZBrush."))},dependencies:[m,c],encapsulation:2})};export{d as DeerComponent};
